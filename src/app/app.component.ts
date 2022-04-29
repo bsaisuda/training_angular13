@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './models/user';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  parentName = {id: 1, name:"somkiat"};
+  // parentName = {id: 1, name:"somkiat"};
+  parentName = new User(1, "somkiat");
 
-  onResponse(event: any) {
+  onResponse(event: User) {
     console.log("On response in parent");
     console.table(event);
   }
