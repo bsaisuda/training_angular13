@@ -6,16 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = '';
-
-  datas = [
-      {id: 1, name: "somkiat"},
-      {id: 2, name: "pui"},
-    ];
-
-  doSth(newName: string) {
-    console.log(newName);
-    this.name = newName;
-  }
+  parentName = {id: 1, name:"somkiat"};
 
 }
