@@ -1,6 +1,8 @@
 <h2>Hello</h2>
 
-Name : <input type="text" #myname (input)="doSth(myname.value)" />
+Name : <input type="text" [value]="name" #myname (input)="doSth(myname.value)" />
+<br/>
+Name2 : <input type="text" #myname2 (input)="doSth(myname2.value)" />
 
 <p>Please enter your name</p>
 <p>Hi, {{name}}</p>
