@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   parentName = {id: 1, name:"somkiat"};
 
+  onResponse(event: any) {
+    console.log("On response in parent");
+    console.table(event);
+  }
+
 }
