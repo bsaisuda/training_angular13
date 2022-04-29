@@ -1,6 +1,6 @@
 <h2>Hello</h2>
 
-Name : <input type="text" (input)="doSth($event)" />
+Name : <input type="text" #myname (input)="doSth(myname.value)" />
 
 <p>Please enter your name</p>
 <p>Hi, {{name}}</p>

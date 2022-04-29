@@ -8,10 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = '';
 
-  doSth(event: Event) {
-    let val = (event.target as HTMLInputElement).value;
-    console.log(val);
-    this.name = val;
+  doSth(newName: string) {
+    console.log(newName);
+    this.name = newName;
   }
 
 }
