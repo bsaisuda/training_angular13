@@ -3,6 +3,10 @@
 Name : <input type="text" [value]="name" #myname (input)="doSth(myname.value)" />
 <br/>
 Name2 : <input type="text" #myname2 (input)="doSth(myname2.value)" />
+<br/>
+Name3 (2-ways binding) :
+<input type="text" [(ngModel)]="name" />
+<input type="text" [ngModel]="name" (ngModelChange)="name=$event" />
 
 <p>Please enter your name</p>
 <p>Hi, {{name}}</p>
