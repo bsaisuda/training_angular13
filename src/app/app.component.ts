@@ -7,8 +7,8 @@ import { User } from './models/user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // parentName = {id: 1, name:"somkiat"};
-  parentName = new User(1, "somkiat");
+  parentName: User = {id: 1, name:"somkiat"};
+  // parentName = new User(1, "somkiat");
 
   onResponse(event: User) {
     console.log("On response in parent");
